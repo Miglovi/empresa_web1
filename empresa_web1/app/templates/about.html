@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Quiénes Somos{% endblock %}
+
+{% block content %}
+    <section class="historia">
+        <h2>Historia de GCA Technology</h2>
+        <p>Fundada en 2024, GCA Technology es una empresa dedicada a la venta de accesorios electrónicos innovadores.</p>
+    </section>
+    <section class="mision-vision">
+        <h2>Misión y Visión</h2>
+        <p><strong>Misión:</strong> Proveer soluciones tecnológicas avanzadas para todos nuestros clientes.</p>
+        <p><strong>Visión:</strong> Ser una empresa líder en tecnología en Latinoamérica.</p>
+    </section>
+    <section class="equipo">
+        <h2>Nuestro Equipo</h2>
+        <img src="{{ url_for('static', filename='img/team.png') }}" alt="Equipo de trabajo">
+        <p>Contamos con un equipo de profesionales apasionados por la tecnología y la innovación.</p>
+    </section>
+{% endblock %}

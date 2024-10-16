@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Servicios{% endblock %}
+
+{% block content %}
+    <section class="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="servicio">
+            <img src="{{ url_for('static', filename='img/service1.png') }}" alt="Desarrollo de Software">
+            <h3>Venta de Accesorios Electrónicos</h3>
+            <p>Accesorios de la mejor calidad, desde cables hasta dispositivos avanzados.</p>
+        </div>
+        <div class="servicio">
+            <img src="{{ url_for('static', filename='img/service2.png') }}" alt="Consultoría Tecnológica">
+            <h3>Consultoría en Tecnología</h3>
+            <p>Te ayudamos a elegir los mejores productos tecnológicos para tus necesidades.</p>
+        </div>
+        <!-- Comentario: Puedes agregar más servicios si es necesario -->
+    </section>
+{% endblock %}

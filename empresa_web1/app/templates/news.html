@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Noticias{% endblock %}
+
+{% block content %}
+    <section class="noticias">
+        <h2>Últimas Noticias</h2>
+        <div class="noticia">
+            <img src="{{ url_for('static', filename='img/news1.png') }}" alt="Lanzamiento">
+            <h3>Elon Musk presenta Cybercab, el robotaxi de Tesla con el que quiere revolucionar el sector</h3>
+            <p>La compañía empezará a producir en serie el vehículo eléctrico de dos puertas sin volante ni pedales en 2026 y el magnate dice que costará menos de 30.000 dólares</p>
+        </div>
+        <!-- Comentario: Puedes agregar más noticias dinámicamente -->
+    </section>
+{% endblock %}
